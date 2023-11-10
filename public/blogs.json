@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "cover": "https://i.ibb.co/vsymFfV/2.png",
+    "title": "Lorem Ipsum: A Journey into Placeholder Text",
+    "author": "Alice Smith",
+    "author_img": "https://i.ibb.co/w6sLqRC/author.jpg",
+    "posted_date": "2023-11-10",
+    "reading_time": 8,
+    "hashtags": ["#Technology", "#Innovation", "#Coding"]
+  },
+  {
+    "id": 2,
+    "cover": "https://i.ibb.co/pKmSrQD/glenn-carstens-peters-npx-XWg-Q33-ZQ-unsplash.jpg",
+    "title": "The Wonders of Space Exploration",
+    "author": "Bob Johnson",
+    "author_img": "https://i.ibb.co/svrtV23/man-4.jpg",
+    "posted_date": "2023-11-11",
+    "reading_time": 15,
+    "hashtags": ["#Science", "#Exploration", "#Discovery"]
+  },
+  {
+    "id": 3,
+    "cover": "https://i.ibb.co/YBhbYkn/blog-3.jpg",
+    "title": "Discovering Hidden Gems: A Cultural Odyssey",
+    "author": "Eva Williams",
+    "author_img": "https://i.ibb.co/r60NGPg/man-1.jpg",
+    "posted_date": "2023-11-12",
+    "reading_time": 12,
+    "hashtags": ["#Travel", "#Adventure", "#Culture"]
+  },
+  {
+    "id": 4,
+    "cover": "https://i.ibb.co/r6LrZDk/blog-2.jpg",
+    "title": "Achieving Wellness Through Healthy Living",
+    "author": "Charlie Davis",
+    "author_img": "https://i.ibb.co/VpCsNfX/man-2.jpg",
+    "posted_date": "2023-11-13",
+    "reading_time": 7,
+    "hashtags": ["#Health", "#Fitness", "#Wellness"]
+  },
+  {
+    "id": 5,
+    "cover": "https://i.ibb.co/khg6gsP/clark-tibbs-oq-Stl2-L5ox-I-unsplash.jpg",
+    "title": "Artistic Inspiration: Nurturing Creativity",
+    "author": "Grace Taylor",
+    "author_img": "https://i.ibb.co/5hFgC9N/girl-3.jpg",
+    "posted_date": "2023-11-14",
+    "reading_time": 10,
+    "hashtags": ["#Art", "#Creativity", "#Inspiration"]
+  }
+]
