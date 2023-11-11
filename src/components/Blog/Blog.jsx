@@ -12,16 +12,21 @@ const Blog = ({ blog, handleBookmark, handleRemoveBookmark, handleReadTime, hand
      setBookmarked(!bookmarked);
      if (!bookmarked) {
        handleBookmark(blog);
+      
      } else {
        handleRemoveBookmark(blog.id)
+        
      }
   };
-  const handleIsRead = (reading_time) => {
+  const handleIsRead = (blog) => {
     setIsRead(!isRead)
     if (!isRead) {
-      handleReadTime(reading_time)
+      handleReadTime(blog.reading_time)
+      handleRemoveBookmark(blog.id);
+      setBookmarked(false)
+
     } else {
-      handleRemoveReadTime(reading_time)
+      handleRemoveReadTime(blog.reading_time)
     }
     
   }
@@ -43,7 +48,7 @@ const Blog = ({ blog, handleBookmark, handleRemoveBookmark, handleReadTime, hand
         </div>
         <div className="flex gap-3 items-center text-xl">
           <p> {reading_time} min read </p>
-          <button className='text-2xl' style={{color: bookmarked && 'red'}} onClick={()=>isBookmarked(blog)}>
+          <button disabled={isRead && true} className='text-2xl' style={{color: bookmarked && 'red' }} onClick={()=>isBookmarked(blog)}>
             <FontAwesomeIcon icon={faBookmark} />
           </button>
         </div>
@@ -60,7 +65,7 @@ const Blog = ({ blog, handleBookmark, handleRemoveBookmark, handleReadTime, hand
       <div className='text-lg font-semibold underline text-blue my-2'>
         <button
           style={{color: isRead && 'gray'}}
-          onClick={() => handleIsRead(reading_time)} className='text-blue-400 underline'>Mark as read</button>
+          onClick={() => handleIsRead(blog)} className='text-blue-400 underline'>Mark as read</button>
       </div>
     </div>
   );
